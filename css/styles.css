@@ -85,6 +85,13 @@
 .list-contact .item + .item  {
         margin-left: 50px;
 }
+.mail-icon {
+        
+        margin-right: 10px;
+        background-color: transparent;
+        fill: #757575;
+}
+
 .logo {
         font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -127,8 +134,14 @@
         text-decoration: none;
 }
 .header-contact:hover,
-.header-contact:focus {
+.header-contact:focus  {
         color: var(--accent-color);
+        
+}
+.header-contact:hover .mail-icon,
+.header-contact:focus .mail-icon {
+        color: var(--accent-color);
+        fill: var(--accent-color);
 }
 
 .title {
@@ -157,11 +170,18 @@
         display: block;
         margin: 0 auto;
         margin-top: 30px;
+        border: none;
 
 }
 
 .section-background {
         background-color: var(--backgroung-accent);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../image/overlay.jpg);
+        max-width: 1600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
         padding-top: 200px;
         padding-bottom: 200px;
 }
@@ -175,6 +195,9 @@
         display: flex;
         list-style: none;
         margin-right: 30px;
+}
+.ben-icon {
+        margin-bottom: 30px;
 }
 .list-benefits .item-ben:not(:last-child) {
         margin-right: 30px;
@@ -229,6 +252,7 @@
         letter-spacing: 0.03em;
         color: var(--title-text-color);
         margin-top: 0;
+        margin-bottom: 0;
 }
 .work_position {
         font-weight: 400;
@@ -237,11 +261,15 @@
         text-align: center;
         letter-spacing: 0.03em;
          color: var(--primary-text-color);
-         margin-bottom: 0;
+         margin-top: 10px;
+         margin-bottom: 16px;
 }
 .subject {
         padding-top: 30px;
         padding-bottom: 30px;
+}
+.section-team {
+        background: #F5F4FA;
 }
 
 .team {
@@ -250,6 +278,61 @@
 .team .item-team:not(:last-child) {
         margin-right: 30px;
 }
+.team-soc {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+}
+.team-soc-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        background-color: aquamarine;
+}
+.team-soc-icon{
+        fill: #757575;
+}
+.team-soc-link  :hover,
+.team-soc-link  :focus {
+        background-color: #2196F3;
+}
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+        fill: #FFFFFF;
+}
+.client-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      
+}
+
+ .client-link{
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+
+
+ }
+ .client-icon {
+        fill: #757575;
+
+ }
+ .client-icon :hover ,
+ .client-icon :focus {
+         fill:  #2196F3;
+        
+ }
+
 .footer {
         background: var(--backgroung-accent);
         padding-top: 60px;
