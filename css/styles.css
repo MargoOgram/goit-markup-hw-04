@@ -89,7 +89,7 @@
         
         margin-right: 10px;
         background-color: transparent;
-        fill: #757575;
+        fill: var(--primary-text-color);
 }
 
 .logo {
