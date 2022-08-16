@@ -199,11 +199,17 @@
         list-style: none;
         margin-right: 30px;
 }
-.ben-icon {
-        margin-bottom: 30px;
-}
+
 .list-benefits .item-ben:not(:last-child) {
         margin-right: 30px;
+}
+.icon-ben-item {
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+
 }
 .title-list {
         font-weight: 700;
@@ -284,6 +290,7 @@
 .item-team {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        background-color: #FFFFFF;
 }
 .team-soc {
         display: flex;
@@ -328,7 +335,7 @@
 
  }
  .client-icon {
-        fill: var(--primary-text-color);
+        fill: var(--icon-color);
 
  }
  .client-link:hover,
@@ -413,9 +420,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        
-        background-color: var(--primary-text-color);
+        /* background-color: var(--backgroung-accent); */
+        background: rgba(255, 255, 255, 0.1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
@@ -469,7 +476,6 @@
 
  .item-port:hover,
  .item-port:focus {
-        border: 1px solid #EEEEEE;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  }
 
